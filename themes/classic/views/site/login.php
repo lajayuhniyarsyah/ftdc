@@ -25,17 +25,7 @@ $form=$this->beginWidget('CActiveForm', array(
 <?php echo $form->passwordField($model,'password',array('class' => 'input-block-level', 'placeholder' => 'Password')); ?>
 
 <div class="form-actions">
-    <?php echo TbHtml::submitButton('LogIn',array(
-	    'color'=>TbHtml::BUTTON_COLOR_PRIMARY,
-	    'size'=>TbHtml::BUTTON_SIZE_LARGE,
-	));
-    ?>
-    <?php 
-        echo TbHtml::link('SignUp',$this->createAbsoluteUrl('site/signUp'),array(
-    	    'class'=>'btn btn-inverse btn-large',
-    	));
-        
-    ?>
+    <?php echo CHtml::submitButton('login'); ?>
 </div>
 
 <?php $this->endWidget(); ?>
